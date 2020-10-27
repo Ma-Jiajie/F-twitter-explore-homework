@@ -2,3 +2,7 @@
   margin-top: 0;
   font-size: $font-size;
 }
+
+@mixin underline() {
+  border-bottom: 1px solid $border-color;
+}

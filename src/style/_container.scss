@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  justify-content: center;
+
+  .from-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $border-color;
+    padding: $container-padding-y $container-padding-x;
+    border-radius: $border-radius-base;
+    min-height: 50vh;
+
+    .from-title {
+      @include heading(30px);
+      color: $white;
+    }
+
+    .text-line {
+    }
+
+    .from-text {
+      height: 20%;
+      width: 100%;
+      border: none;
+      @include underline();
+      background-color: transparent;
+    }
+  }
+}
