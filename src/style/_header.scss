@@ -6,13 +6,14 @@
   @include underline();
 
   nav {
-    > ul {
-      display: flex;
-      > li {
-        margin-right: 10px;
-        &:last-child {
-          margin-right: 0;
-        }
+    @extend .menu;
+
+    li {
+      &:first-child {
+        @include btn-varint($primary-color, $body-bg);
+      }
+      &:last-child {
+        @include btn-varint($white, $primary-color);
       }
     }
   }

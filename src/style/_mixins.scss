@@ -6,3 +6,13 @@
 @mixin underline() {
   border-bottom: 1px solid $border-color;
 }
+
+@mixin btn-varint($color, $bg-color) {
+  color: $color;
+  background-color: $bg-color;
+  padding: $btn-padding-y $btn-padding-x;
+  border-radius: 20px;
+  @if lightness($bg-color) < 30% {
+    border: 1px solid $color;
+  }
+}
