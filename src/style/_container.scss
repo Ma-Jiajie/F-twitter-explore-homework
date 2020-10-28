@@ -30,16 +30,18 @@
       @include underline();
       background-color: transparent;
       margin-bottom: 30px;
+      outline: none;
+      color: $color-base;
     }
 
     .forget-password-link {
       margin-bottom: 30px;
-      color: $primary-color;
+      color: $link-color;
       width: 25%;
       text-decoration: none;
 
       &:hover {
-        color: $white;
+        color: $link-hover-color;
       }
     }
 
@@ -47,6 +49,15 @@
       text-align: center;
       padding-top: 20px;
       padding-bottom: 20px;
+    }
+
+    .from-login-button {
+      @include btn-varint($primary-color, $body-bg);
+      outline: none;
+    }
+    .from-register-button {
+      @include btn-varint($white, $primary-color);
+      outline: none;
     }
   }
 }
