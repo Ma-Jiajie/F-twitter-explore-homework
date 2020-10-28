@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     border: 1px solid $border-color;
     padding: $container-padding-y $container-padding-x;
     border-radius: $border-radius-base;
@@ -17,9 +16,11 @@
     .from-title {
       @include heading(30px);
       color: $white;
+      margin-bottom: 40px;
     }
 
-    .text-line {
+    .text-placeholder {
+      margin-bottom: 10px;
     }
 
     .from-text {
@@ -28,6 +29,24 @@
       border: none;
       @include underline();
       background-color: transparent;
+      margin-bottom: 30px;
+    }
+
+    .forget-password-link {
+      margin-bottom: 30px;
+      color: $primary-color;
+      width: 25%;
+      text-decoration: none;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    .from-or {
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
   }
 }
