@@ -27,7 +27,7 @@
       height: 20%;
       width: 100%;
       border: none;
-      @include underline();
+      border-bottom: 1px solid $border-color;
       background-color: transparent;
       margin-bottom: 30px;
       outline: none;

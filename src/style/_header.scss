@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: $header-padding-y $header-padding-x;
-  @include underline();
+  border-bottom: 1px solid $border-color;
 
   nav {
     @extend .menu;

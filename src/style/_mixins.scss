@@ -3,10 +3,6 @@
   font-size: $font-size;
 }
 
-@mixin underline() {
-  border-bottom: 1px solid $border-color;
-}
-
 @mixin btn-varint($color, $bg-color) {
   color: $color;
   background-color: $bg-color;
